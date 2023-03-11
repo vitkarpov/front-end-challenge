@@ -2,10 +2,11 @@ import React, { useCallback, useState } from "react";
 
 export default function Input(props) {
   const [value, setValue] = useState(props.value);
+
   const handleOnChange = useCallback((e) => {
     setValue(e.target.value);
     props.onChange && props.onChange(e);
-  }, [props.value, props.onChange]);
+  }, [setValue, props.onChange]);
 
   if (props.type === 'select') {
     return <select

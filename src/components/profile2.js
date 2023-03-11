@@ -112,7 +112,7 @@ export default function Profile(props) {
           <span
             className={`profile-form__message ${state.status === 'error' ? 'profile-form__message--invalid' : ''}`}
           >
-            {(state.status === 'success' || state.status === 'error') ? state.message : ''}
+            {state.message ? state.message : ''}
           </span>
         </div>
       </form>
