@@ -1,4 +1,4 @@
-import Profile from './profile';
+import Profile from './profile2';
 import React from 'react';
 
 export default () => (
